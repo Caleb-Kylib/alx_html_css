@@ -1,0 +1,28 @@
+/* Task 1: Flexbox layout positioning */
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensures full height */
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Auto height and width */
+}
+
+/* Article takes 2/3 of space */
+article {
+  flex: 2;
+  overflow-y: auto; /* Scrollable if needed */
+  padding: 20px;
+}
+
+/* Aside takes 1/3 of space */
+aside {
+  flex: 1;
+  overflow-y: auto; /* Scrollable if needed */
+  padding: 20px;
+}
