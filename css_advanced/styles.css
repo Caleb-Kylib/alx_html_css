@@ -164,3 +164,143 @@ nav ul li a {
   font-size: 16px;
   font-weight: bold;
 }
+
+
+/* Videos Section */
+.videos {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.videos h2 {
+  font-size: 32px;
+  color: #071629;
+  margin-bottom: 60px;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.video-card {
+  width: 255px;
+  text-align: left;
+}
+
+.video-card img:first-of-type {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  color: #071629;
+  margin: 15px 0 10px;
+}
+
+.video-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.video-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.video-author p {
+  font-size: 14px;
+  color: #C271FF;
+  margin: 0;
+}
+
+.video-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+
+.video-rating p {
+  font-size: 14px;
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.stars img {
+  width: 14px;
+  height: 14px;
+}
+
+
+.membership {
+  background-color: #071629;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.membership-card img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.membership-card h3 {
+  font-size: 18px;
+  color: #C271FF;
+  margin-bottom: 10px;
+}
+
+.membership-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFF;
+}
+
+.membership-btn {
+  background-color: #C271FF;
+  display: inline-block;
+  color: white;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 0 auto;
+}
+
+.membership-btn:hover {
+  background-color: #a351da;
+}
+
+
+
