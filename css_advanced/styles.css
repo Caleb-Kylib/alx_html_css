@@ -302,5 +302,38 @@ nav ul li a {
   background-color: #a351da;
 }
 
+.faq {
+  background-color: white;
+  padding: 80px 20px;
+  text-align: center;
+  color: #071629;
+}
+
+.faq h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #071629;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  color: #C271FF;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #071629;
+  line-height: 1.6;
+}
 
 
