@@ -1,0 +1,98 @@
+/* Import from previous task */
+@import url("1-styles.css");
+
+/* ===== Our results (no image, CSS-only pentagons) ===== */
+.results {
+  /* Replace photo with a code gradient (dark-to-darker + soft vignette) */
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(255,255,255,0.06), transparent 60%),
+    linear-gradient(180deg, #0b1b2a 0%, #071629 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.results > p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  color: #e2e6ea;
+}
+
+.results-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* each stat container */
+.stat {
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS-only pentagon (no images) */
+.pentagon {
+  --pentagon: #FF6565;
+  --pentagon-dark: #e45454; /* subtle base edge */
+  width: 160px;
+  height: 150px;
+  position: relative;
+  background: var(--pentagon);
+  /* draw a pentagon with clip-path */
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: grid;
+  place-items: center;
+  padding-top: 10px; /* room for value */
+  transition: transform .15s ease-in-out;
+}
+
+/* tiny flat base to match Figma edge */
+.pentagon::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 20%;
+  right: 20%;
+  height: 6px;
+  background: var(--pentagon-dark);
+  border-radius: 2px;
+  filter: brightness(0.95);
+}
+
+.pentagon:hover,
+.pentagon:active {
+  opacity: 0.9;               /* interaction rule from spec */
+  transform: translateY(-2px);
+}
+
+.pentagon .value {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+}
+
+.pentagon .label {
+  font-size: 12px;
+  color: #ffecec;
+  margin-top: 6px;
+}
+
+/* responsiveness */
+@media (max-width: 900px) {
+  .results-grid { grid-template-columns: repeat(2, minmax(160px, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .results { padding: 60px 16px; }
+  .results-grid { grid-template-columns: 1fr; gap: 28px; }
+}
