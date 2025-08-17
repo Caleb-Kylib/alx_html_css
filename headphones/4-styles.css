@@ -74,7 +74,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f9f9fa;
+  background-color: #fafbfc;
 }
 
 .contact-container {
@@ -142,4 +142,49 @@
 
 .contact-container button:hover {
   background-color: #ff4c4c;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0a1a2f;
+  color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+.footer-right a {
+  margin: 0 8px;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #ff6b6b;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
 }
